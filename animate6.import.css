@@ -1,0 +1,99 @@
+@charset "utf-8";
+#CssGaga{background-image:none}
+.module6 .frame{height: 400px;top: 50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);}
+.module6 .ele-logo{background-image: url(img/slice/p6-logo.png);width: 50px;height: 50px;left: 50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);top:0;}
+.module6 .ele-title{text-align: center; width: 100%; color: #fff; font-weight: bold; top: 56px;}
+.module6 .ele-girl1{width: 93px;height: 195px;background-image: url(img/slice/p6-girl1.png);top: 110px;left: 0;opacity: 0;}
+.module6 .ele-girl2{width: 107px;height: 195px;background-image: url(img/slice/p6-girl2.png);top: 110px;left: 70px;opacity: 0;}
+.module6 .ele-girl3{width: 107px;height: 195px;background-image: url(img/slice/p6-girl3.png);top: 110px;left: 150px;opacity: 0;}
+.module6 .ele-girl4{width: 81px;height: 195px;background-image: url(img/slice/p6-girl4.png);top: 110px;left: 231px;opacity: 0;}
+.module6 .data-list{position: absolute;top: 320px;}
+.module6 .data-item{width: 80px;text-align: center;color: #fff;float: left;}
+.module6 .data-item h1{font-size: 15px;margin-bottom: 3px;font-weight: bold;}
+.module6 .data-item p{font-size: 12px;}
+.module6 .ele-icon-hot{width: 21px;height: 19px;background-image: url(img/slice/p6-icon-hot.png);top: 315px;left: 66px;}
+.module6 .ele-btn-txt{text-align: center;color: #fff;font-size: 14px;bottom: 0px;width: 100%;opacity: 0;
+	-webkit-transition:all .2s 1.2s ease-in;
+		transition:all .2s 1.2s ease-in;
+	}
+
+.active .module6 .ele-btn-txt{opacity: 1;}
+.active .module6 .ele-girl1,
+.active .module6 .ele-girl2,
+.active .module6 .ele-girl3,
+.active .module6 .ele-girl4{
+	  -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-duration:.5s;
+    animation-duration:.5s;
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+    -webkit-animation-iteration-count:1;
+    animation-iteration-count:1;
+}
+.active .module6 .ele-girl1,
+.active .module6 .ele-girl2{-webkit-animation-name:fadeInLeft; animation-name:fadeInLeft;}
+
+.active .module6 .ele-girl3,
+.active .module6 .ele-girl4{-webkit-animation-name:fadeInRight; animation-name:fadeInRight;}
+
+.active .module6 .ele-girl1{-webkit-animation-delay: .5s;animation-delay: .5s;}
+.active .module6 .ele-girl2{-webkit-animation-delay: .7s;animation-delay: .7s;}
+.active .module6 .ele-girl3{-webkit-animation-delay: .5s;animation-delay: .5s;}
+.active .module6 .ele-girl4{-webkit-animation-delay: .7s;animation-delay: .7s;}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}

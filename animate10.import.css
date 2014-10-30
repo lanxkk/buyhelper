@@ -1,0 +1,57 @@
+@charset "utf-8";
+#CssGaga{background-image:none}
+.module10 .ele-bg{width: 320px;height: 395px;background-image: url(img/slice/p10-bg.png);top: 33px;}
+.module10 .ele-txt{color: #fff;font-size: 14px;width: 100%;text-align: center;top: 250px;}
+.module10 .ele-btn-download{width: 181px;height: 41px;background-image: url(img/slice/p10-btn-download.png);top:290px;left: 50%;margin-left: -90px;opacity: 0;}
+.module10 .ele-btn-share{width: 181px;height: 41px;background-image: url(img/slice/p10-btn-share.png);top:346px;left: 50%;margin-left: -90px;opacity: 0;}
+
+.active .module10 .ele-btn-download,
+.active .module10 .ele-btn-share{
+	-webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-duration:.4s;
+    animation-duration:.4s;
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+    -webkit-animation-iteration-count:1;
+    animation-iteration-count:1;
+     -webkit-animation-name:p10fadein;
+    animation-name:p10fadein;
+    
+}
+.active .module10 .ele-btn-download{
+	-webkit-animation-delay: .5s;
+    animation-delay: .5s;
+}
+.active .module10 .ele-btn-share{
+	-webkit-animation-delay: .7s;
+    animation-delay: .7s;
+}
+
+@-webkit-keyframes p10fadein {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes p10fadein {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
