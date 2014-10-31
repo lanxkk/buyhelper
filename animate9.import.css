@@ -2,7 +2,7 @@
 #CssGaga{background-image:none}
 .module9 .frame{height: 400px;top: 50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);}
 .module9 .ele-logo{background-image: url(img/slice/p9-logo.png);width: 50px;height: 50px;left: 50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);top:0;}
-.module9 .ele-title{text-align: center; width: 100%; color: #fff; font-weight: bold; top: 56px;}
+.module9 .ele-title{text-align: center; width: 100%; color: #fff; font-weight: bold; top: 54px;}
 .module9 .ele-staricon1{background-image: url(img/slice/p9-staricon1.png);width: 121px;height: 117px;top: 140px;left: 30px;opacity: 0;}
 .module9 .ele-staricon2{background-image: url(img/slice/p9-staricon2.png);width: 121px;height: 117px;top: 270px;left: 30px;opacity: 0;}
 .module9 .ele-conclusion{color: #fff;width: 100%;text-align: center;font-size: 12px;top: 90px;opacity: 0;}
@@ -72,18 +72,25 @@
     animation-name:fadeInRight;
 }
 
-.active .module9 .ele-staricon1,
-.active .module9 .ele-staricon2{
+.active .module9 .ele-staricon1{
     -webkit-animation-delay: .9s;
     animation-delay: .9s;
 }
+.active .module9 .ele-staricon2{
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
 
 .active .module9 .ele-title1,
-.active .module9 .ele-title2,
-.active .module9 .ele-desp1,
-.active .module9 .ele-desp2{
+.active .module9 .ele-desp1{
     -webkit-animation-delay: 1.1s;
     animation-delay: 1.1s;
+}
+
+.active .module9 .ele-title2,
+.active .module9 .ele-desp2{
+    -webkit-animation-delay: 1.7s;
+    animation-delay: 1.7s;
 }
 
 
