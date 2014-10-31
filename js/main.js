@@ -14,11 +14,11 @@ $(".main").onePageScroll({
   });
 });
 
-$('.arrow').bind('click',function(){
+$('.arrow').bind('tap',function(){
     $(".main").moveDown();
 });
 
-$('#durex-btn').bind('click',function(){
+$('#durex-btn').bind('tap',function(){
 	if($(this).hasClass('ele-durex-btn-disable')){
 		$(this).removeClass('ele-durex-btn-disable');
 		$('#gangben-btn').addClass('ele-gangben-btn-disable');
@@ -28,7 +28,7 @@ $('#durex-btn').bind('click',function(){
 	}
 });
 
-$('#gangben-btn').bind('click',function(){
+$('#gangben-btn').bind('tap',function(){
 	if($(this).hasClass('ele-gangben-btn-disable')){
 		$(this).removeClass('ele-gangben-btn-disable');
 		$('#durex-btn').addClass('ele-durex-btn-disable');
