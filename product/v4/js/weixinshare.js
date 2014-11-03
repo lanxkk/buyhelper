@@ -2,9 +2,10 @@
 var shareInfo = {
 	appid: '',
     imgUrl: 'http://qzonestyle.gtimg.cn/aoi/sola/20141031102850_xo7cVCQ80G.png',
-    lineLink: 'http://m.isux.us/code/buyhelper/index.html',
-	descContent: '18禁网购不完全报告-惠惠购物助手',
-	shareTitle: '18禁网购不完全报告！'
+    // lineLink为需要添加的url
+    lineLink: '',
+	descContent: '那些关于网购羞羞的数据',
+	shareTitle: '惠惠购物助手18X网购不完全报告'
 }
 function shareFriend() {
     WeixinJSBridge.invoke('sendAppMessage',{
